@@ -26,7 +26,7 @@ const Testimonials = () => {
         >
           <div className="flex justify-start space-x-4 relative z-10">
             <div>
-              <h2 className="font-bold text-xl">Avnit Khade</h2>
+              <h2 className="font-bold text-xl">vaibuavi</h2>
               <h3 className="text-lg opacity-50">★★★★</h3>
             </div>
           </div>
