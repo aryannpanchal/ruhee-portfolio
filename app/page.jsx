@@ -4,6 +4,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaTwitter, FaLinkedin, FaTiktok } from "react-icons/fa";
+import Testimonials from './../components/Testimonials';
+import Stats from './../components/Stats';
+
 
 // Animation variants
 const fadeIn = (direction = "up", delay = 0) => {
@@ -44,9 +47,10 @@ const scaleFade = (delay = 0) => ({
 
 const MainPage = () => {
   return (
+    <>
     <div>
       <motion.div
-        className="bg-[#f3efe8] text-[#f3efe8] w-full max-h-screen px-4 py-10 md:px-24 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 font-serif "
+        className="bg-[#f3efe8] text-[#f3efe8] w-full px-4 py-10 md:px-24 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 font-serif "
         initial="hidden"
         animate="visible"
       >
@@ -63,8 +67,8 @@ const MainPage = () => {
           variants={fadeIn("left", 0.3)}
           className="bg-[#1f1c1b] p-6 rounded-xl flex flex-col justify-between"
         >
-          <div className="text-xl md:text-3xl leading-snug ">
-            Creative <em>direction</em> grounded in clarity <em>and</em> emotion.
+          <div className="text-xl md:text-6xl leading-snug text-[#c3a98f] ">
+            Crafting <em>spaces</em> that <em>breathe</em> life and soul.
           </div>
         </motion.div>
 
@@ -93,10 +97,10 @@ const MainPage = () => {
           className="bg-[#1f1c1b] p-4 rounded-xl flex flex-col gap-4"
         >
           <div>
-            <div className="text-sm mb-2">Soft Form</div>
+            {/* <div className="text-sm mb-2">Soft Form</div> */}
             <div className="bg-[#3a2c29] rounded-lg h-40 md:h-48 w-full flex items-center justify-center overflow-hidden">
               <motion.img
-                src="/federico babina.jpg"
+                src="/projects.png"
                 alt="Soft Form Federico Babina"
                 className="object-fill w-full h-full"
                 initial={{ opacity: 0, scale: 1.1 }}
@@ -109,10 +113,13 @@ const MainPage = () => {
               />
             </div>
           </div>
-          <ul className="text-sm space-y-2 text-gray-300">
-            <li>Balm Body</li>
-            <li>Morning Coffee</li>
-            <li>Ritual Stone</li>
+          <ul className="text-sm space-y-6 text-gray-300 font-bold md:text-2xl gap-4">
+            <a href=''>Balm Body</a><br />
+            <a href=''>Morning Coffee</a><br />
+            <a href=''>Ritual Stone</a><br />
+            <a href=''>Ritual Stone</a><br />
+            <a href=''>Ritual Stone</a><br />
+            <a href=''>Ritual Stone</a><br />
           </ul>
         </motion.div>
 
@@ -121,30 +128,47 @@ const MainPage = () => {
           variants={fadeIn("left", 0.7)}
           className="bg-[#1f1c1b] p-6 rounded-xl text-sm leading-relaxed"
         >
-          Mira Chen is a creative director specializing in brand storytelling and visual identity for fashion, beauty, and lifestyle. Her work merges minimalism with emotional depth to create thoughtful, compelling design systems.
+          I'm Ruhee Awargaonkar, an architecture graduate passionate about designing meaningful and user-centric spaces. With a strong foundation in urban design, sustainability, and spatial storytelling, I aim to create architecture that blends function with emotion. From concept to execution, I approach each project with creativity, empathy, and a commitment to enhancing the built environment.
+
         </motion.div>
 
         {/* Contact Section */}
         <motion.div
           variants={fadeIn("right", 0.8)}
-          className="bg-[#c3a98f] text-[#3a2c29] p-6 rounded-xl flex flex-col justify-between"
+          className="bg-[#c3a98f] text-[#3a2c29] p-6 rounded-xl flex flex-col"
+        >
+          <div className="md:text-4xl">Have some questions?</div>
+          <div className="text-xl font-medium">Contact <em>me</em></div>
+        </motion.div>
+
+         {/* last Section */}
+         <motion.div
+          variants={fadeIn("right", 0.8)}
+          className="bg-black text-white p-6 rounded-xl flex flex-col justify-between"
         >
           <div className="text-sm mb-4">Have some questions?</div>
           <div className="text-xl font-medium">Contact <em>me</em></div>
         </motion.div>
 
         {/* Social Media Icons */}
-        {/* <motion.div
+        <motion.div
           variants={fadeIn("up", 1.0)}
-          className="col-span-1 md:col-span-3 flex flex-col sm:flex-row items-center justify-center gap-6 text-xl mt-4 text-[#1f1c1b]"
+          className="col-span-1 md:col-span-3 flex flex-col md:flex-row items-center justify-center gap-6 text-xl mt-4 text-[#1f1c1b]"
         >
           <FaInstagram className="hover:scale-110 transition-transform duration-300" />
           <FaTwitter className="hover:scale-110 transition-transform duration-300" />
           <FaLinkedin className="hover:scale-110 transition-transform duration-300" />
           <FaTiktok className="hover:scale-110 transition-transform duration-300" />
-        </motion.div> */}
+        </motion.div>
       </motion.div>
+     
     </div>
+    <Stats />
+     <Testimonials />
+    
+    </>
+ 
+    
   );
 };
 
