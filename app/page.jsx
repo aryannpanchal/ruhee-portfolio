@@ -46,7 +46,7 @@ const MainPage = () => {
   return (
     <div>
       <motion.div
-        className="bg-white text-[#f3efe8] w-full min-h-screen px-4 py-10 md:px-24 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 font-serif"
+        className="bg-[#f3efe8] text-[#f3efe8] w-full min-h-screen px-4 py-10 md:px-24 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 font-serif "
         initial="hidden"
         animate="visible"
       >
@@ -63,7 +63,7 @@ const MainPage = () => {
           variants={fadeIn("left", 0.3)}
           className="bg-[#1f1c1b] p-6 rounded-xl flex flex-col justify-between"
         >
-          <div className="text-xl md:text-3xl leading-snug">
+          <div className="text-xl md:text-3xl leading-snug ">
             Creative <em>direction</em> grounded in clarity <em>and</em> emotion.
           </div>
         </motion.div>

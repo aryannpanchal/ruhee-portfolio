@@ -8,11 +8,6 @@ const inter = Inter({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Ruhee Portfolio",
@@ -26,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
