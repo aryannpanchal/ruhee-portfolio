@@ -46,7 +46,7 @@ const MainPage = () => {
   return (
     <div>
       <motion.div
-        className="bg-[#f3efe8] text-[#f3efe8] w-full min-h-screen px-4 py-10 md:px-24 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 font-serif "
+        className="bg-[#f3efe8] text-[#f3efe8] w-full max-h-screen px-4 py-10 md:px-24 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-6 font-serif "
         initial="hidden"
         animate="visible"
       >
@@ -134,7 +134,7 @@ const MainPage = () => {
         </motion.div>
 
         {/* Social Media Icons */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("up", 1.0)}
           className="col-span-1 md:col-span-3 flex flex-col sm:flex-row items-center justify-center gap-6 text-xl mt-4 text-[#1f1c1b]"
         >
@@ -142,7 +142,7 @@ const MainPage = () => {
           <FaTwitter className="hover:scale-110 transition-transform duration-300" />
           <FaLinkedin className="hover:scale-110 transition-transform duration-300" />
           <FaTiktok className="hover:scale-110 transition-transform duration-300" />
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </div>
   );
