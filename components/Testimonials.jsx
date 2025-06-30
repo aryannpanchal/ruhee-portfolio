@@ -14,15 +14,15 @@ const Testimonials = () => {
   return (
     <section
       ref={ref}
-      className="md:mb-[150px] md:mt-14 sm:mt-16 md:mx-20 sm:mx-4"
+      className="sm:mt-16 md:mx-20 sm:mx-4"
     >
-      <div className="grid md:grid-cols-4 gap-6 mt-5 p-6">
+      <div className="grid md:grid-cols-4 gap-6 md:mt-5 p-6">
         {/* Testimonial Card 1 */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          className="relative text-black shadow-2xl p-6 bg-white rounded-lg md:col-span-2"
+          className="relative text-black shadow-2xl p-6  rounded-lg md:col-span-2"
         >
           <div className="flex justify-start space-x-4 relative z-10">
             <div>
@@ -44,7 +44,7 @@ const Testimonials = () => {
           variants={fadeInUp}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          className="relative bg-white text-black p-8 rounded-lg shadow-2xl"
+          className="relative  text-black p-8 rounded-lg shadow-2xl"
         >
           <div className="flex justify-start space-x-4 relative z-10">
             <div>
@@ -66,7 +66,7 @@ const Testimonials = () => {
           variants={fadeInUp}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          className="relative bg-white text-black p-8 rounded-lg md:row-span-2 shadow-2xl"
+          className="relative  text-black p-8 rounded-lg md:row-span-2 shadow-2xl"
         >
           <div className="flex justify-start space-x-4 relative z-10">
             <div>
@@ -91,7 +91,7 @@ const Testimonials = () => {
           className="relative text-black p-8 rounded-lg md:col-span-2 sm:hidden md:block"
         >
           <marquee scrollAmount={15}>
-            <p className="text-9xl opacity-50">Testimonials</p>
+            <p className="text-9xl opacity-50 pt-12 font-world">Testimonials</p>
           </marquee>
         </motion.div>
 
@@ -100,7 +100,7 @@ const Testimonials = () => {
           variants={fadeInUp}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          className="relative bg-white text-black p-8 rounded-lg md:row-span-2 md:row-start-2 md:col-start-1 shadow-2xl"
+          className="relative  text-black p-8 rounded-lg md:row-span-2 md:row-start-2 md:col-start-1 shadow-2xl"
         >
           <div className="flex justify-start space-x-4 relative z-10">
             <div>
