@@ -10,9 +10,9 @@ const Navbar = () => {
             <div class="flex shrink-0">
                   <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
                 <a aria-current="page"
-                    class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                    class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-black transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 bg-[#f3efe8]"
                     href="#">Home</a>
-                <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-black transition-all duration-200 hover:bg-gray-100 hover:text-gray-900 bg-[#f3efe8]"
                     href="#">Projects</a>
             </div>
                 {/* <a aria-current="page" class="flex items-center" href="/">
@@ -23,8 +23,6 @@ const Navbar = () => {
             </div>
           
             <div class="flex items-center justify-end gap-3">
-                <a class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
-                    href="/login">Sign in</a>
                 <a class="inline-flex items-center justify-center rounded-xl bg-black px-3 py-2 text-sm font-thin text-white shadow-sm transition-all duration-150 hover:bg-gray-700 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-700"
                     href="/login">Reach out</a>
             </div>

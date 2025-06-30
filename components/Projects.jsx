@@ -5,12 +5,12 @@ const Projects = () => {
     <section>
           
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-        <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+       <p id='stats' className='font-bold font-world text-center md:text-4xl sm:text-3xl pb-8 sm:pt-24'>
+        Projects
+      </p> <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
     
             <div class="p-6">
-            <p id='stats' className='font-bold font-world text-center md:text-4xl sm:text-3xl pb-8 sm:pt-24'>
-        Projects
-      </p>
+            
                 <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://via.placeholder.com/150" alt="blog" />
 
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Short headline.</h1>

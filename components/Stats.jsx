@@ -9,7 +9,7 @@ const Stats = () => {
       <div className=" text-gray-100 body-font md:mb-12 sm:mb-0 sm:max-w-screen sm:mx-6 rounded-2xl">
         
         <section className="container px-5 mx-auto bg-h-100px p-6">
-        <p id='stats' className='font-bold font-world text-center md:text-4xl sm:text-2xl sm:pt-24 md:mt-4 text-black'>
+        <p id='stats' className='font-bold font-world text-center md:text-4xl sm:text-2xl sm:pt-24 md:pb-6 text-black'>
         Stats at a glance
       </p>
           <div className="flex flex-wrap m-4 text-center justify-center text-black">
