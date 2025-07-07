@@ -103,7 +103,7 @@ const MainPage = () => {
               <motion.img
                 src="/projects.png"
                 alt="Soft Form Federico Babina"
-                className="object-fill w-full h-full"
+                className="object-fill w-full"
                 initial={{ opacity: 0, scale: 1.1 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -114,13 +114,13 @@ const MainPage = () => {
               />
             </div>
           </div>
-          <ul className="text-sm space-y-6 text-gray-300 font-bold md:text-2xl gap-4">
-            <a href=''>Balm Body</a><br />
-            <a href=''>Morning Coffee</a><br />
-            <a href=''>Ritual Stone</a><br />
-            <a href=''>Ritual Stone</a><br />
-            <a href=''>Ritual Stone</a><br />
-            <a href=''>Ritual Stone</a><br />
+          <ul className="text-sm space-y-6 text-gray-300 font-bold md:text-2xl gap-12 h-auto">
+            <a className='hover:text-underline' href='#Bridge'>Bridging the gap (Residential School)</a><br />
+            <a className='hover:text-underline' href='#Rehab'>Irshalpada (Rehabilition Project)</a><br />
+            <a className='hover:text-underline' href=''>The Zero Edge House</a><br />
+            <a className='hover:text-underline' href='#working'>Working Drawing</a><br />
+            <a className='hover:text-underline' href=''>Resort Design</a><br />
+            <a className='hover:text-underline' href=''>Library Design</a><br />
           </ul>
         </motion.div>
 
@@ -138,18 +138,24 @@ const MainPage = () => {
           variants={fadeIn("right", 0.8)}
           className="bg-[#c3a98f] text-[#3a2c29] p-6 rounded-xl flex flex-col"
         >
-          <div className="md:text-4xl">Have some questions?</div>
-          <div className="text-xl font-medium">Contact <em>me</em></div>
+          <div className="md:text-4xl opacity-65">My strength</div>
+          <div className="md:text-6xl font-medium"><em>Architectural Design</em></div>
         </motion.div>
-
+<motion.div
+          variants={fadeIn("right", 0.8)}
+          className="bg-[#4f4f4f] text-[#c3a98f] p-6 rounded-xl flex flex-col"
+        >
+          <div className="md:text-4xl">Have some questions?</div>
+          <div className="text-xl font-medium">Contact <em>me via social media</em></div>
+        </motion.div>
          {/* last Section */}
-         <motion.div
+         {/* <motion.div
           variants={fadeIn("right", 0.8)}
           className="bg-black text-white p-6 rounded-xl flex flex-col justify-between"
         >
           <div className="text-sm mb-4">Have some questions?</div>
           <div className="text-xl font-medium">Contact <em>me</em></div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Social Media Icons */}
         <motion.div
