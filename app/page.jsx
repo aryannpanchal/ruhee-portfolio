@@ -7,6 +7,8 @@ import { FaInstagram, FaTwitter, FaLinkedin, FaTiktok } from "react-icons/fa";
 import Testimonials from './../components/Testimonials';
 import Stats from './../components/Stats';
 import Projects from './../components/Projects';
+import ImageGrid from './../components/ImageGrid';
+import Footer from './../components/Footer';
 
 
 // Animation variants
@@ -169,10 +171,12 @@ const MainPage = () => {
         </motion.div>
       </motion.div>
      
-    </div>
+    </div><ImageGrid />
     <Stats />
+    
      <Testimonials />
      <Projects />
+     <Footer />
     
     </>
  
