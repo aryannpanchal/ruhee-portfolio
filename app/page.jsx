@@ -4,7 +4,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaTwitter, FaLinkedin, FaTiktok } from "react-icons/fa";
-import Testimonials from './../components/Testimonials';
+// import Testimonials from './../components/Testimonials';
 import Stats from './../components/Stats';
 import Projects from './../components/Projects';
 import ImageGrid from './../components/ImageGrid';
@@ -174,7 +174,7 @@ const MainPage = () => {
     </div><ImageGrid />
     <Stats />
     
-     <Testimonials />
+     {/* <Testimonials /> */}
      <Projects />
      <Footer />
     
