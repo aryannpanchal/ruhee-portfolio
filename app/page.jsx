@@ -103,7 +103,7 @@ const MainPage = () => {
             {/* <div className="text-sm mb-2">Soft Form</div> */}
             <div className="bg-[#3a2c29] rounded-lg h-40 md:h-48 w-full flex items-center justify-center overflow-hidden">
               <motion.img
-                src="/projects.png"
+                src="/my.jpeg"
                 alt="Soft Form Federico Babina"
                 className="object-fill w-full"
                 initial={{ opacity: 0, scale: 1.1 }}
@@ -171,7 +171,7 @@ const MainPage = () => {
         </motion.div>
       </motion.div>
      
-    </div><ImageGrid />
+    </div>
     <Stats />
     
      {/* <Testimonials /> */}
